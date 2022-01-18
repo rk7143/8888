@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bubbleSort_algo() 
+{
+    list=[6,4,0, 3,-2,1];
+var is_sorted = false;
+ while (!is_sorted) 
+ {
+    is_sorted = true;
+    for (var n = 0; n < list.length - 1; n++) 
+    {
+      if (list[n] > list[n+1]){
+        var x = list[n+1];
+        list[n+1] = list[n];
+        list[n] = x;
+        is_sorted = false;
+      }
+    }
+  }
+  return list;
+};
+console.log(bubbleSort_algo());
+    </script>
+</body>
+</html>

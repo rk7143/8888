@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let circle={
+    radius:20,
+    area: function(){
+        return this.radius*this.radius*3.142;
+    },
+    perimeter (){
+        return 2*3.142*this.radius;
+    }
+}
+console.log("area of circle is "+circle.area());
+console.log("perimeter of circle is "+circle.perimeter());
+//change the radius of circle
+circle.radius=12;
+console.log("area of circle is "+circle.area());
+console.log("perimeter of circle is "+circle.perimeter());
+
+    </script>
+</body>
+</html>
